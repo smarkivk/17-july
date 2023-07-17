@@ -22,3 +22,53 @@ Copy code
 2 I am a file
 3 Read me until end-of-file.
 The program does not read any input from the user or perform any other operations. It simply displays the specified lines of text.
+
+generated error couldnt pass one testcase 
+
+//2 
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+   int i = 0;
+        while(scan.hasNext()){
+       i++;
+       System.out.println(i + " " + scan.nextLine());
+   }
+    }
+}
+
+The updated Java program reads input from the user until the end of input is reached. Each line of input is then printed along with a line number.
+
+Here's how the program works:
+
+It creates a Scanner object scan to read input from System.in (standard input).
+It initializes a variable i to 0, which represents the line number.
+It enters a loop using scan.hasNext() to check if there is more input.
+Inside the loop, it increments i and prints the line number along with the current line of input using scan.nextLine().
+The loop continues until there is no more input to read.
+To use this program, you can provide input by typing lines of text and pressing Enter. The program will display each line along with a line number.
+
+Note: To stop the program and see the output, you can use Ctrl + D (for Unix/Linux) or Ctrl + Z (for Windows) to signal the end of input.
+
+Example input:
+
+css
+Copy code
+Hello
+This is a sample input
+for testing
+Example output:
+
+css
+Copy code
+1 Hello
+2 This is a sample input
+3 for testing
